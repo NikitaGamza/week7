@@ -13,7 +13,7 @@ export default function appScr(express, bodyParser, fs, crypto, http, User, m) {
     .use(bodyParser.urlencoded({ extended: true }))
     .get("/login/", (req, res) => {
       res.set(headers);
-      res.send("itmo310267");
+      res.send("gamzanikita");
     })
     .get("/code/", (req, res) => {
       res.set(headers);
@@ -70,5 +70,5 @@ export default function appScr(express, bodyParser, fs, crypto, http, User, m) {
         console.log(e.codeName);
       }
     })
-    .use(({ res: r }) => r.status(404).set(hu).send("itmo310267"));
+    .use(({ res: r }) => r.status(404).set(hu).send("gamzanikita"));
 }
